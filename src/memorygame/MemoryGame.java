@@ -4,26 +4,18 @@ import java.util.Scanner;
 
 /**
  *
- * @author Kellie
+ * @author Kellie/Melanie
  */
 public class MemoryGame {
-  
-    // Instance Variables
-    String players;
-    String name;
-    String instructions = "This is a Memory Game \n\n"
-            + "The object of the game is to match the math fact cards with \n"
-            + "their corresponding answers, or vice versa.\n"
-            + "This is a 1 to 4 player game.\n"
-            + "Choose from 4 different levels of difficulty: Beginner,\n"
-            + "Intermediate, Advanced, and Expert.\n"
-            + "Beginner: Elementary math (addition, subtraction, mulitplication,\n"
-            + "division).\n"
-            + "Intermediate: Middle school math (pre-algebra).\n"
-            + "Advanced: High school math (algebra, geometry, trigonometry).\n"
-            + "Expert: College math (calculus).\n"
-            + "Test your math skills and your memory!";
-         
+        String name; //first name
+        Number noplayers; //number of players
+        String instructions = "The goal of the game: At the end of the game, \"n\n"
+        + "everyone adds up the number of match. Each match is worth one \n" 
+        + "point. The person with the most matches is the winner.\n"
+        + "GoodLuck!!!\n\n";
+        /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         MemoryGame myGame = new MemoryGame();
         myGame.getName();
