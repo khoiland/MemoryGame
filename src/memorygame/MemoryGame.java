@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class MemoryGame {
         String name; //first name
-        String age; //number of players
+        String age; // age of player
         String instructions = "The goal of the game: At the end of the game, \"n\n"
         + "everyone adds up the number of match. Each match is worth one \n" 
         + "point. The person with the most matches is the winner.\n"
