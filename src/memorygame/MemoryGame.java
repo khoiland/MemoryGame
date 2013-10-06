@@ -17,17 +17,36 @@ public class MemoryGame {
         + "everyone adds up the number of match. Each match is worth one \n" 
         + "point. The person with the most matches is the winner.\n"
         + "GoodLuck!!!\n\n";
-        /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+        
+ public class Board {
+        String rowCount = 10; // number of rows    
+        String colCount = 10; // number of columns
+        
+  public void displayCount() {
+        System.out.println("There are " + this.rowCount + " rows, and " + 
+                + this.colCount + "columns.");
+    }
+}
+public class Cards {
+        int cards = 1 * 2; // memory cards
+        int answer = 2; // answer cards
+ 
+        public void displayCards() {
+            System.out.println(this.cards " equals " + this.answer);
+      
+        }
+}
+public static void main(String[] args) {
         MemoryGame myGame = new MemoryGame();
         myGame.getName();
         myGame.getage();
         myGame.displayHelp();
+        Board myBoard = new Board();
+        myBoard.displayCount();
+        Cards myCard = new Cards();
+        myCard.displayCards();
     }
-    
-      public void getage() {
+        public void getage() {
         Scanner input = new Scanner (System.in);
         System.out.println("Enter your age: ");
         this.age = input.next();
@@ -38,7 +57,7 @@ public class MemoryGame {
         System.out.println("Enter your name: ");            
         this.name = input.next();
     }
-                  
+ 
     public void displayHelp() {
         System.out.println("\nWelcome " + this.name + "\n");
         System.out.println("\nSo your age is: " + this.age + "\n");
