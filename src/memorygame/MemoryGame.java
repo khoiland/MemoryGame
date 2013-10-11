@@ -6,6 +6,7 @@ package memorygame;
 
 import java.util.Scanner;
 
+      
 /**
  *
  * @author Kellie/Melanie
@@ -21,25 +22,30 @@ public class MemoryGame {
 public static void main(String[] args) {
         MemoryGame myGame = new MemoryGame();
         myGame.getName();
-     
-        myGame.displayHelp();
-        Instructions instructions = new Instructions();
-        instructions.displayInstructions();
-        
-        
-        getnumberplayers players = new getnumberplayers();
-        players.displayPlayers(); 
+        myGame.getNumberofPlayers();
+           
+    /**
+     *
+     */
+    public void getNumberofPlayers(){
+         Scanner input;
+            input = new Scanner(System.in);
+         System.out.println("Enter Number of Players");
+         this.players=input.next();       
        
-      }
-      
-    public void getName() {
+    }
+
+    private void getName() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name: ");            
         this.name = input.next();
     }
- 
-    public void displayHelp() {
-        System.out.println("\n\t\t\t\t* Welcome " + this.name + "! *\n");
-    }
-    }
 
+    private void displayHelp() {
+        Instructions Instructions = new Instructions();
+        Instructions.displayInstructions();
+        
+}
+}
+
+        

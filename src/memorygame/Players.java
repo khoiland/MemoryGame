@@ -4,6 +4,9 @@
  */
 package memorygame;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  *
  * @author Kellie
