@@ -8,9 +8,6 @@ package memorygame;
  *
  * @author Kellie
  */
-public class Matches {
+public class Expert {
     
-    public Matches(){
-    }
-    public Easy()
 }

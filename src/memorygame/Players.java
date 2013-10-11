@@ -17,15 +17,13 @@ public class Players {
     }
     
     //public void getPlayers(){
-        //String numPlayers = "\n\t Please enter the number of players:\n";
+        //String Players = "\n\t Please enter the number of players:\n";
         //System.out.println(numPlayers);            
         //this.numPlayers = input.next();
         	
 private void getnumberplayers(char choice) throws IOException {
-  Scanner input = new Scanner (System.in);
-  System.out.println("Please enter the number of players\n"
-          + "Choose 1 - 4 ");
-  choice = (char) System.in.read();
+  Scanner input = new Scanner (System.in);  
+  this.players = input.next()
     }
     
 }

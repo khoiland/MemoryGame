@@ -11,15 +11,14 @@ package memorygame;
  * @author Kellie
  */
 public class Cards {
-   
+  
+    
     public Cards(){
         
     }
 
-    void displayCards() {
+    public void displayCards() {
   
-        {
-    
         }
 }
-}
+
