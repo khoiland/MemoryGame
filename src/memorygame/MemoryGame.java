@@ -33,8 +33,6 @@ public static void main(String[] args) {
         // display the instructions
         myGame.displayInstructions(); 
         
-        // choose game level
-        myGame.gameLevel();
     /**
      *
      */
@@ -61,39 +59,5 @@ public static void main(String[] args) {
         // comes form class instructions
         Instructions Instructions = new Instructions();
         Instructions.displayInstructions();       
-    }
-    
-    public void gameLevel(){
-        Scanner input = new Scanner(System.in);
-        
-        // asks user what difficulty level they wish to play
-        System.out.println(" Please select a level: "
-                + "\n [e] for Easy (basic math operations)"
-                + "\n [i] for Intermediate (pre-algebra)"
-                + "\n [a] for Advanced (algebra and trigonometry)"
-                + "\n [x] for Expert (calculus)");
-        this.level = input.next();
-        
-        // initial code to print out game board depending on 
-        // game leve chosen
-        // NOT CONNECTED 
-        
-        //if (level = e)
-          //  System.out.prinln(Easy);
-            
-        //else if (level = i)
-          //  System.out.println(Intermediate);
-        
-        //else if (level = a)
-          //  System.out.println(Advanced);
-        
-        //else if (level = x)
-          //  System.out.println(Expert);
-                
-    }
-    
-    
+    }   
 }
-
-
-        
