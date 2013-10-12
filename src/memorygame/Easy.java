@@ -14,8 +14,8 @@ public class Easy {
     int randNumber1;
     int randNumber2;
     
-    // make board 5 x 5
-    int[][] Table = new int [5][5];
+    // make board 6 x 6
+    int[][] Table = new int [6][6];
     
     int answer;
     
@@ -40,6 +40,7 @@ public class Easy {
                 randNumber1 = Table[randNumber2 - 1][(int)(Math.random() * 5)];
                 break;
         }
+        // create math operations randomly
         switch (operand) {
             case "+":
                 answer = randNumber1 + randNumber2;
