@@ -27,8 +27,8 @@ public class Advanced {
         
         number = 0;
         
-        for(int j = 0; j <= 4; j++)
-           for(int i = 0; i <= 4; i++)
+        for(int j = 0; j <= 5; j++)
+           for(int i = 0; i <= 5; i++)
                Table[i][j] = (j+1) * (i+1);
     }
     public void Problem(String operand){
